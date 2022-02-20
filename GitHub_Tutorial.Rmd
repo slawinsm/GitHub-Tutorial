@@ -1,7 +1,7 @@
 ---
-title: "Tutorial Title"
-author: "Author"  
-date: "`r Sys.Date()`"
+title: "GitHub Tutorial"
+author: "Michelle Slawinski"  
+date: "02-25-22"
 output: github_document
 ---
 
@@ -12,143 +12,99 @@ knitr::opts_chunk$set(
 )
 ```
 
-Git.. GitHub.. What are they? Why do they matter? This tutorial will introduce you to Git and GitHub. This presentation is for individuals with limited knowledge on Git and GitHub, although those with robust knowledge or background are more than welcome to join!  
+Git.. GitHub.. What are they? Why do they matter? In this tutorial we will introduce you to Git and GitHub. This presentation is for individuals with limited knowledge on Git and GitHub, although those with robust knowledge or background are more than welcome to join! 
 
-#### Learning objectives
-- Develop an understanding of what Git and GitHub are 
-- Install Git, GitHub and RStudio
-- Connect Git, GitHub and RStudio
+# Learning objectives
+1. Develop an understanding of what Git and GitHub are 
+1. Install Git, GitHub and RStudio
+1. Connect Git, GitHub and RStudio
 
-## Git
-#### What is Git
-Have you ever tried working on a project or a specific piece of code with another teammate? Or have you ever overwritten your own code and had to rewrite the chunk from the beginning?
+# Git
+## What is Git?
+Have you ever tried working on a project or a specific piece of code with another teammate? Or have you ever overwritten your  code and had to rewrite the chunk from the beginning?
 
-Frustrating, right? Well, Git is software that allows you to do better. Be a better coder, communicator and even a better loved one because the time you will save can be used elsewhere. 
+Frustrating, right? Well, Git is software that allows you to do better. Be a better coder, communicator and person because the time you will save can then be spent elsewhere!
 
 Now, I will preface by saying that there is a learning curve to Git. But keep at it, take breaks, and do not ignore your mental health.
 
-#### Setup
-Let's get started shall we!
+![Git Project Workflow](https://git-scm.com/book/en/v2/images/areas.png)
+_Credit: _
+* Working directory/tree: where you have one version of the project checked out
+* Staging area, or "index": a file on what will go into your commit
+* Git directory is where your metadata is. This is what is copied when you clone a repository from one computer to another.
 
-Setting up a token in RStudio
-usethis::create_github_token()
-gitcreds::gitcreds_set()
+## **Setup**
+
+Let's get started shall we! 
+
+First, check to see if you already have Git installed. On Windows, look for an application called "Git Bash" and on Macs, search for an application called "Terminal." Type "git version" into the terminal. If you have an output with the version, Git is installed, if you the terminal is saying unknown command, then Git it not installed. 
 
 
-## GitHub
-#### What is GitHub
-#### Setup
-#### Repositories
+If you do not already have Git installed, navigate to [Git](https://git-scm.com/) and click *Downloads.* Select the software appropriate for your system and follow the remaining installation steps.
 
+**Windows**
 
-## RStudio
-#### Setup
+1. Select **"Click here to download"** This should be the version you need however, you can look below to see additional options.
+1. Allow installer to download then open.
+1. "Do you want to allow this app to make changes to this device?" Yes, yes you do! You will need administrative access to your computer for this.
+1. Use the defaults throughout the installation process.
 
-#Checking Your Current Version of R 
+![1. License Agreement](C:/Users/slawinskimc/OneDrive - Florida Department of Health/Documents/GitHub/GitHub-Tutorial/Set Up Images/1 License Agreemement.png "1. License Agreement") 
+![2. Select Components](C:/Users/slawinskimc/OneDrive - Florida Department of Health/Documents/GitHub/GitHub-Tutorial/Set Up Images/2. Select Components.PNG "2. Select Components")
+
+**Mac**
+1. 
+2. 
+3. 
+4. 
+
+## Git Resources
+* [Pro Git Book](https://git-scm.com/book/en/v2)
+* [Git Guides](https://github.com/git-guides/install-git)
+
+## Git Dictionary
+Term      | Definition
+--------- | ----------
+Modify    | Changed the file but have not committed it to your database
+Staged    | Marked a modified file to go into your next commit snapshot
+Commit    | Save the state of your project in your local database
+Shell     |
+
+# Graphical User Interface (GUI)
+## What are GUIs?
+## GUI Resources
+* [GUI Clients](https://git-scm.com/downloads/guis)
+
+# GitHub
+## What is GitHub?
+## Setup
+## Repositories
+
+# RStudio
+## Setup
+
+**Checking Your Current Version of R**
+```{r}
 R.version.string
+```
 
-# --------- Introducing Yourself to Git ---------
-#install if needed (do this exactly once):
+**Introducing Yourself to Git**
+```{r}
+#install if needed:
 #install.packages("usethis")
 
 library(usethis)
-use_git_config(user.name = "Michelle Slawinski", user.email = "slawinsm@gmail.com")
+use_git_config(user.name = "Michelle Slawinski", user.email = "slawinsm@gmail.com") 
+  #use.email should be the same as your GitHub account
 ```
 
-## Examples
-
-Examples are key to meeting your learning objectives. Consider your audience, learning objectives, and narrative when writing examples (see [The Carpentries Curriculum Development](https://carpentries.github.io/curriculum-development/) for tips). The learner needs to be able to reproduce examples from your tutorial on their computer. To do this, we look to advice on how to create a [minimal, reproducible example](https://stackoverflow.com/a/5963610). Examples may include:
-
-- Problem or goal
-- Dataset
-- Solution code
-- Information for reproducibility
-
-## Dataset
-
-Almost all examples require an input. That is what is meant by "dataset". You can create your own dataset or use one that is built into R.
-
-**Create-your-own:**
-
-Known values
+**Setting up a token in RStudio**
 ```{r}
-x <- c(1, 5, 9, 10)
-```
-
-Random values (set seed to make it reproducible)
-```{r}
-set.seed(20)
-y <- rnorm(4)
-```
-See guidance on [minimal, reproducible example](https://stackoverflow.com/a/5963610) for more examples.
-
-**Built-in:**
-
-Available datasets in R (run in RStudio to see list)
-```{r}
-data() 
-```
-
-A popular example dataset is 'iris'
-```{r}
-head(iris)
-```
-
-Another great example dataset is 'penguins'
-```{r}
-# install the package if it's not already installed
-if(!("palmerpenguins" %in% installed.packages()[,"Package"]))
-  install.packages("palmerpenguins")
-
-# load package
-library(palmerpenguins)
-
-# show data
-head(penguins)
+usethis::create_github_token()
+gitcreds::gitcreds_set
 ```
 
 
-## Solution code
-
-We will use an example from the [palmerpenguins vignette](https://allisonhorst.github.io/palmerpenguins/articles/intro.html) to demonstrate solution code. For this example, the goal is to create a scatterplot for data with different categories.
-
-**Install packages if they're not already installed** 
-
-This handy code is from [Stackoverflow](https://stackoverflow.com/a/4090208). List the packages a learner would need for your tutorial in the first line.
-```{r}
-list.of.packages <- c("palmerpenguins", "dplyr", "ggplot2")
-new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-if(length(new.packages)) install.packages(new.packages)
-```
-
-**Load packages** 
-
-We use the code chunk option "message = F" to suppress messages generated when packages load.
-```{r, message = F}
-library(palmerpenguins)
-library(dplyr)
-library(ggplot2)
-```
-
-**Settings**
-
-Include figure settings, saved variables, and create-your-own datasets.
-```{r}
-theme_set(theme_minimal())
-```
-
-**Solution**
-
-Code to create scatterplot. We use the option out.width to make the figure clearer and smaller.
-```{r, out.width = "50%"}
-ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
-  geom_point(aes(color = species,
-                 shape = species),
-             size = 2) +
-  scale_color_manual(values = c("darkorange","darkorchid","cyan4"))
-```
-
-If there are variations on your solution, provide more examples!
 
 
 ## Information for reproducibility
