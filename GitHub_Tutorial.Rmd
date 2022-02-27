@@ -124,7 +124,7 @@ gitcreds::gitcreds_set
 ```
 
 ## RStudio Resources
-* 
+* [An Introduction to Git and how to use it with RStudio](https://r-bio.github.io/intro-git-rstudio/)
 
 & that's it! 
 
