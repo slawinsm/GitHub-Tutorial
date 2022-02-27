@@ -1,7 +1,7 @@
 ---
 title: "GitHub Tutorial"
 author: "Michelle Slawinski"  
-date: "02-25-22"
+date: "3-11-22"
 output: github_document
 ---
 
@@ -21,9 +21,9 @@ Git.. GitHub.. What are they? Why do they matter? In this tutorial we will intro
 
 # Git
 ## What is Git?
-Have you ever tried working on a project or a specific piece of code with another teammate? Or have you ever overwritten your  code and had to rewrite the chunk from the beginning?
+Have you ever tried working on a project or a specific piece of code with another teammate? Or have you ever overwritten your code and had to rewrite the chunk from the beginning?
 
-Frustrating, right? Well, Git is software that allows you to do better. Be a better coder, communicator and person because the time you will save can then be spent elsewhere!
+Frustrating, right? Well, Git is a version control that allows you to do better. Be a better coder, communicator and person because the time you will save can then be spent elsewhere!
 
 Now, I will preface by saying that there is a learning curve to Git. But keep at it, take breaks, and do not ignore your mental health.
 
@@ -39,7 +39,6 @@ Let's get started shall we!
 
 First, check to see if you already have Git installed. On Windows, look for an application called "Git Bash" and on Macs, search for an application called "Terminal." Type "git version" into the terminal. If you have an output with the version, Git is installed, if you the terminal is saying unknown command, then Git it not installed. 
 
-
 If you do not already have Git installed, navigate to [Git](https://git-scm.com/) and click *Downloads.* Select the software appropriate for your system and follow the remaining installation steps.
 
 **Windows**
@@ -53,10 +52,19 @@ If you do not already have Git installed, navigate to [Git](https://git-scm.com/
 ![2. Select Components](C:/Users/slawinskimc/OneDrive - Florida Department of Health/Documents/GitHub/GitHub-Tutorial/Set Up Images/2. Select Components.PNG "2. Select Components")
 
 **Mac**
-1. 
-2. 
-3. 
-4. 
+
+If you have Git installed, then we will most likely just need to update it. 
+
+To Update Git
+1. Follow this [video](https://modulesunraveled.com/installing-git/updating-git-if-you-have-only-version-comes-xcode-or-command-line-developer-tools)!
+
+To Install Git
+1. Select **"Click here to download"** This should be the version you need however, you can look below to see additional options.
+1. Click on the Binary installer link and select download.
+1. Once it is downloaded, open the file, locate the package, right click and select "Open"
+1. Follow the prompts
+1. For help with the remaining installation process, follow this 
+[video](https://modulesunraveled.com/installing-git/installing-git-if-you-do-not-have-xcode-or-command-line-developer-tools-installed)
 
 ## Git Resources
 * [Pro Git Book](https://git-scm.com/book/en/v2)
@@ -68,17 +76,28 @@ Term      | Definition
 Modify    | Changed the file but have not committed it to your database
 Staged    | Marked a modified file to go into your next commit snapshot
 Commit    | Save the state of your project in your local database
-Shell     |
+Shell     | A terminal that uses written commands to interact with your operating system
 
 # Graphical User Interface (GUI)
 ## What are GUIs?
+Git but better. 
+
 ## GUI Resources
 * [GUI Clients](https://git-scm.com/downloads/guis)
 
 # GitHub
 ## What is GitHub?
+Git and GitHub are essentially the same thing but GitHub makes it easier on us. GitHub is a management tool for your code. Think of it like Microsoft Word's tracked changes feature. In a Word document, you can use this feature to visualize the changes you or someone else are making. In GitHub, we are using a similar way to visualize version control. This is extremely important when you start working in teams or on a large project. You will want to have changes to your code saved so that you can refer back if you need to. 
+
 ## Setup
+Navigate [here](https://desktop.github.com) to download GitHub Desktop and follow prompts
+
 ## Repositories
+## GitHub Dictionary
+Term      | Definition
+--------- | ----------
+Branching | When you duplicate part of a the repository
+Merge     | After you finish updating the code you branched, you can merge it back into the project's main source code  
 
 # RStudio
 ## Setup
@@ -94,7 +113,7 @@ R.version.string
 #install.packages("usethis")
 
 library(usethis)
-use_git_config(user.name = "Michelle Slawinski", user.email = "slawinsm@gmail.com") 
+use_git_config(user.name = "#insert your first and last name#", user.email = "#insert your email#") 
   #use.email should be the same as your GitHub account
 ```
 
@@ -104,35 +123,17 @@ usethis::create_github_token()
 gitcreds::gitcreds_set
 ```
 
+## RStudio Resources
+* 
 
-
-
-## Information for reproducibility
-
-R and R packages are continuously updated and examples that work under a certain set of conditions may not work under another set. Ideally, you would update your tutorial when key software is updated to maintain working examples. However, that may not be feasible, and the next best option is to provide learners with all the necessary information about your computing environment. This can help them identify differences with their computing environment that may be preventing the example from running as expected. 
-
-**My computing environment:**
-
-Session information
-```{r}
-sessionInfo()
-```
-
-RStudio version
-```{r}
-rstudioapi::versionInfo()$version
-```
+& that's it! 
 
 
 ## Sharing your tutorial
-
 ### Slides
 If you're sharing your tutorial at an R-Ladies meeting, consider making slides to go along with it.
 
 See the [R-Ladies Gainesville presentations repository](https://github.com/R-Ladies-Gainesville/presentations) to download the the R Markdown file `tutorial_template.Rmd`. The tutorial_template presentation is created with the [xaringan](https://slides.yihui.org/xaringan/#1) package and the RLadies theme by [Alison Hill](https://www.apreshill.com/project/rladies-xaringan/).
 
 ### Github
-
 Now it's time to add your tutorial to the R-Ladies Gainesville [tutorials repository](https://github.com/R-Ladies-Gainesville/tutorials). This will make it easier for others to provide feedback and for people to use your tutorial!
-
-If you do not use Github, email your `.Rmd` file to R-Ladies Gainesville at <gainesville@rladies.org>.
