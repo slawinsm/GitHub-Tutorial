@@ -7,18 +7,11 @@ output: github_document
 
 ```{r setup, include = FALSE}
 install.packages("knitr")
+library(knitr)
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
-)
-```
-```{r pandoc_options, include=FALSE, echo=FALSE}
-install.packages("pander")
-require(pander)
-panderOptions('digits', 3)
-panderOptions('round', 3)
-panderOptions('keep.trailing.zeros', TRUE)
-panderOptions('keep.line.breaks', TRUE)
+  comment = "#>",
+  echo = TRUE)
 ```
 
 Git.. GitHub.. What are they? Why do they matter? In this tutorial we will introduce you to Git and GitHub. This presentation is for individuals with limited knowledge on Git and GitHub, although those with robust knowledge or background are more than welcome to join! 
@@ -88,20 +81,30 @@ Microsoft       | Mac
 *TortoiseGit    | *Fork
 *SmartGit       | 
 
-```{r concepts, echo=FALSE}
-install.packages(pander)
-mytable = data.frame(Microsoft/Mac = c("
-                                   \\\n 
-                                   \\\n * GitHub Desktop
-                                   \\\n * GitKraken
-                                   \\\n * Sourcetree
-                                   \\\n * TortoiseGit
-                                   \\\n * SmartGit"))
+```{r}
 ```
 
-``` {r concepts_descriptions, results = 'asis'}
-pandoc.table(mytable, style = "multiline", justify = "left", caption = "Popular GUIs")
-```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # GitHub
 ## What is GitHub?
