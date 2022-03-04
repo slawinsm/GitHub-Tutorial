@@ -119,9 +119,10 @@ We will be practicing how to fork a repository from GitHub, make a change locall
 
 1. Navigate to [RLadies of Gainesville's GitHub](https://github.com/R-Ladies-Gainesville) 
 1. Locate and click on the "practice" repository  
-1. In the upper right hand corner, click "Fork"
-1. 
-1.
+1. In the upper right hand corner, click "Fork" 
+Once you have it forked, you will see that it is in your remote GitHub. Now that you have it remotely, we will want to get access to it locally so that we can add to the repository. 
+1. Click into the 'practice' repository if you are not already in it and click on the 'Code" dropdown.
+1. Select Open with GitHub Desktop. Once you click this, GitHub Desktop should open with a screen asking you where you would like to place the repository on your desktop. Go ahead and find where you would like to put the repository. 
 
 ## GUI Resources
 * [GUI Clients](https://git-scm.com/downloads/guis)
@@ -154,8 +155,7 @@ gitcreds::gitcreds_set
 ## RStudio Resources
 *[An Introduction to Git and how to use it with RStudio](https://r-bio.github.io/intro-git-rstudio/)
 
-& that's it! 
-
+#Last Minute Things
 ## Dictionary
 Term           | Definition
 ---------      | ----------
@@ -170,13 +170,14 @@ Push           | Once you commit your project or file to your local system, you 
 Pull           | If your repository has new changes in GitHub, you can download and integrate those remote changes by using 'pull' 
 Fetch          | To see if there are remote changes, you can use fetch to see what was updated. Fetch will not merge your updates though
 
-#Last Minute Things
 ##Tips
 1. Update some basic profile features GitHub offers like a picture, occupation, or location! Click your picture in the top right corner after logging in and select 'Settings.' 
 1. You can also personalize your profile's ReadMe file with an introduction for people who will visit your page. This is again optional but helps you get noticed. If you want to see some super cool examples, beef up your profile with certain tools, or do some  late night reading on how to make your profile stand out, look at this [repository](https://github.com/abhisheknaiidu/awesome-github-profile-readme)!
 1. Make sure you have a ReadMe file for every repository. This serves as an executive summary for your project and saves viewers time on figuring out what the purpose of your project is.
-1. When you make a commit, make sure you are descriptive, especially if you are working on a team 
+1. When you make a commit, make sure you are descriptive, especially if you are working on a team. You can use git to search your commit messages so you'll want to be descriptive! Google 'git commit best practices' and you can look through all the suggestions on how to do this.
 1. Branch this markdown file and add your own tips!
+
+& that's it! 
 
 # Sharing your tutorial
 ## Slides
