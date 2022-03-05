@@ -1,6 +1,6 @@
 ---
-title: "GitHub Tutorial"
-author: "Michelle Slawinski"  
+title: "Getting Around GitHub"
+author: "Michelle Slawinski"
 date: "3-11-22"
 output: github_document
 ---
@@ -47,41 +47,43 @@ If you do not already have Git installed, navigate to [Git](https://git-scm.com/
 
 If you have Git installed, then we will most likely just need to update it. 
 
-To Update Git
-1. Follow this [video](https://modulesunraveled.com/installing-git/updating-git-if-you-have-only-version-comes-xcode-or-command-line-developer-tools)!
+To update git follow this [video](https://modulesunraveled.com/installing-git/updating-git-if-you-have-only-version-comes-xcode-or-command-line-developer-tools)!
 
 To Install Git
-1. Select **"Click here to download"** This should be the version you need however, you can look below to see additional options.
-1. Click on the Binary installer link and select download.
-1. Once it is downloaded, open the file, locate the package, right click and select "Open"
-1. Follow the prompts
-1. For help with the remaining installation process, follow this 
-[video](https://modulesunraveled.com/installing-git/installing-git-if-you-do-not-have-xcode-or-command-line-developer-tools-installed)
+1. Select **"Click here to download."** This should be the version you need however, you can look below to see additional options. 
 
-##Git Configuration Basics
+1. Click on the Binary installer link and select download. 
+
+1. Once it is downloaded, open the file, locate the package, right click and select "Open" 
+
+1. Follow the prompts. 
+
+1. For help with the remaining installation process, follow this 
+[video](https://modulesunraveled.com/installing-git/installing-git-if-you-do-not-have-xcode-or-command-line-developer-tools-installed).
+
+## Git Configuration Basics
+
 When you configure git you will have options on what level you would like to make configurations.
 
-  *System Level*
-  git config --system
-  
-  *User Level*
-  git config --global
-  
-  *Project Level*
-  git config
+&nbsp; **System Level**
+ &nbsp; <pre><code> git config --system </code></pre>
+&nbsp; **User Level**
+ &nbsp; <pre><code> git config --global </code></pre>
+&nbsp; **Project Level**
+  &nbsp; <pre><code> git config </code></pre>
 
 Let's set up some basic git configurations. 
+
 1. Setting up your username: When you set your user name, this will have everything you do in git have your user name associated with it.
   config --global user.name "Michelle Slawinski"
-  
 1. Setting up your email: Do the same thing with your email address. This should be the email you used to set up your GitHub account.
   config --global user.email "my_email.com"
-  
 1. Viewing git configurations: Type this code and scroll to the bottom to see the configurations you set up.
   git config --list
 
-For other configuration options see [here](https://git-scm.com/docs/git-config)
+For other configuration options see [here](https://git-scm.com/docs/git-config).
 
+## Help Options
 Are you Stuck? Ask Git!
 In the terminal, type "git help" and it will return some common Git commands. If you want to learn more about a specific command such as branching, you can type "git help branch" and it will pull up a manual on branching.
 
@@ -98,13 +100,14 @@ In the terminal, type "git help" and it will return some common Git commands. If
 Git but better. GUIs are where you can use Git but in a more visually pleasing manner. Instead of using command lines in Git, you can use a click-based GUI. Think of it like using R/SAS versus SPSS or Jasp. 
 
 **Popular GUIs**
-Microsoft       | Mac            
----------       | ----------     
+
+Microsoft | Mac            
+---------|----------     
 *GitHub Desktop | *GitHub Desktop 
-*GitKraken      | *GitKraken
-*Sourcetree     | *Sourcetree
-*TortoiseGit    | *Fork
-*SmartGit       | 
+*GitKraken | *GitKraken
+*Sourcetree | *Sourcetree
+*TortoiseGit | *Fork
+*SmartGit | 
 
 # GitHub
 ## What is GitHub?
@@ -118,17 +121,16 @@ Now that you have an understanding of Git and GUIs such as GitHub, let's practic
 We will be practicing how to fork a repository from GitHub, make a change locally, then commit those changes and push them back to GitHub. Ready? Lets get our feet wet. 
 
 1. Navigate to [RLadies of Gainesville's GitHub](https://github.com/R-Ladies-Gainesville) 
-1. Locate and click on the "practice" repository  
+1. Locate and click on the "practice" repository
 1. In the upper right hand corner, click "Fork" 
 Once you have it forked, you will see that it is in your remote GitHub. Now that you have it remotely, we will want to get access to it locally so that we can add to the repository. 
-1. Click into the 'practice' repository if you are not already in it and click on the 'Code" dropdown.
+1. Click into the 'practice' repository if you are not already in it and click on the 'Code" drop down.
 1. Select Open with GitHub Desktop. Once you click this, GitHub Desktop should open with a screen asking you where you would like to place the repository on your desktop. Go ahead and find where you would like to put the repository. 
 
 ## GUI Resources
 * [GUI Clients](https://git-scm.com/downloads/guis)
 
-#Additional Learning in R
-# RStudio
+# Additional Learning in RStudio
 ## Setup
 
 **Checking Your Current Version of R**
