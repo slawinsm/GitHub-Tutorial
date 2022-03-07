@@ -1,11 +1,13 @@
 ---
 title: "Getting Around GitHub"
-author: "Michelle Slawinski" 
+author: "Michelle Slawinski"
 date: "3/6/2022"
-output: 
+output:
   html_document:
-    toc: true
-    toc_float: true
+    toc: yes
+    toc_float: yes
+  pdf_document:
+    toc: yes
 ---
 
 ```{r setup, include = FALSE}
@@ -135,6 +137,7 @@ We will be practicing how to fork a repository from GitHub, make a change locall
 Once you have it forked, you will see that it is in your remote GitHub. Now that you have it remotely, we will want to get access to it locally so that we can add to the repository. 
 1. Click into the 'practice' repository if you are not already in it and click on the 'Code" drop down.
 1. Select Open with GitHub Desktop. Once you click this, GitHub Desktop should open with a screen asking you where you would like to place the repository on your desktop. Go ahead and find where you would like to put the repository. 
+1. Open the 
 
 
 # RStudio
